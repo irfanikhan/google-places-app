@@ -1,10 +1,11 @@
-import { StyleSheet } from 'react-native';
-import HomePage from './HomePage';
-
+import { SafeAreaView, StyleSheet } from "react-native";
+import HomePage from "./home";
 
 export default function HomeScreen() {
   return (
-    <HomePage />
+    <SafeAreaView style={{ flex: 1 }}>
+      <HomePage />
+    </SafeAreaView>
     // <ParallaxScrollView
     //   headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
     //   headerImage={
@@ -54,8 +55,8 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
   },
   stepContainer: {
@@ -67,6 +68,6 @@ const styles = StyleSheet.create({
     width: 290,
     bottom: 0,
     left: 0,
-    position: 'absolute',
+    position: "absolute",
   },
 });
